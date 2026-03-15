@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SitePilotPro — Premium Web Design That Takes Your Business Further</title>
+<meta name="description" content="SitePilotPro builds premium websites that help businesses reach new audiences and grow. Custom design, e-commerce, SEO, and ongoing support.">
+<meta property="og:title" content="SitePilotPro — Premium Web Design That Takes Your Business Further">
+<meta property="og:description" content="We build premium websites that help businesses reach new audiences and grow.">
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+<!-- ========== NAVIGATION ========== -->
+<nav class="nav" role="navigation" aria-label="Primary navigation">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo" aria-label="SitePilotPro home">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 3L18 11H14L16 3Z" fill="currentColor" opacity="0.15"/>
+        <path d="M16 3L18 11H14L16 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        <line x1="16" y1="10" x2="16" y2="26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M16 14L5 20L16 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 14L27 20L16 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 24L11 27L16 26" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 24L21 27L16 26" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      SitePilotPro
+    </a>
+
+    <ul class="nav__links" id="navLinks" role="list">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">How It Works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <a href="#pricing" class="nav__cta">Get Started</a>
+      <button class="nav__mobile-toggle" aria-label="Toggle menu" aria-expanded="false" id="mobileToggle">
+        <i data-lucide="menu" style="width:22px;height:22px;"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      Now accepting new projects
+    </div>
+    <h1 class="hero__title">Websites that take you <span>global.</span></h1>
+    <p class="hero__subtitle">We design and build premium websites that help businesses reach new audiences, enter new markets, and grow beyond borders.</p>
+    <div class="hero__actions">
+      <a href="#pricing" class="btn btn--primary">
+        Get Started
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <a href="#services" class="btn btn--secondary">View Services</a>
+    </div>
+
+    <!-- Interactive 3D Globe -->
+    <div class="hero__globe fade-in" aria-label="Interactive 3D globe showing global web reach with city markers and connection arcs">
+      <canvas id="globeCanvas" class="globe-canvas"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICES ========== -->
+<section class="section section--centered" id="services">
+  <div class="container">
+    <div class="section__label">What We Build</div>
+    <h2 class="section__heading">Everything your business needs online.</h2>
+    <p class="section__subheading">From custom designs to full e-commerce platforms, we build websites engineered for performance, conversion, and growth.</p>
+
+    <div class="services__grid">
+      <!-- Featured card -->
+      <div class="service-card service-card--featured fade-in">
+        <div class="service-card__content">
+          <div class="service-card__icon">
+            <i data-lucide="palette" style="width:24px;height:24px;"></i>
+          </div>
+          <h3 class="service-card__title">Custom Web Design</h3>
+          <p class="service-card__desc">Your brand deserves a website built from scratch. We craft pixel-perfect designs with intentional typography, color, and motion — all tailored to tell your story and convert visitors into customers.</p>
+          <a href="#pricing" class="service-card__link">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="service-card__image">
+          <img src="./assets/services.png" alt="Website design process on a premium workstation" width="400" height="300" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Small cards -->
+      <div class="service-card fade-in">
+        <div class="service-card__icon">
+          <i data-lucide="shopping-cart" style="width:24px;height:24px;"></i>
+        </div>
+        <h3 class="service-card__title">E-Commerce</h3>
+        <p class="service-card__desc">Online stores built to sell. Secure checkout, inventory management, and seamless payment integration — everything you need to reach customers worldwide.</p>
+        <a href="#pricing" class="service-card__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">
+          <i data-lucide="target" style="width:24px;height:24px;"></i>
+        </div>
+        <h3 class="service-card__title">Landing Pages</h3>
+        <p class="service-card__desc">High-converting pages designed to capture leads the moment visitors arrive. Fast, focused, and built for results.</p>
+        <a href="#pricing" class="service-card__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">
+          <i data-lucide="search" style="width:24px;height:24px;"></i>
+        </div>
+        <h3 class="service-card__title">SEO Optimization</h3>
+        <p class="service-card__desc">Get found by the people who matter. Built-in optimization so your site ranks higher and your audience discovers you first.</p>
+        <a href="#pricing" class="service-card__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">
+          <i data-lucide="smartphone" style="width:24px;height:24px;"></i>
+        </div>
+        <h3 class="service-card__title">Mobile-First</h3>
+        <p class="service-card__desc">Flawless on every screen. Fully responsive across phones, tablets, and desktops — your site looks sharp no matter how people find you.</p>
+        <a href="#pricing" class="service-card__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">
+          <i data-lucide="headphones" style="width:24px;height:24px;"></i>
+        </div>
+        <h3 class="service-card__title">Ongoing Support</h3>
+        <p class="service-card__desc">We're with you after launch. Maintenance, updates, and dedicated support to keep your site performing at its best.</p>
+        <a href="#pricing" class="service-card__link">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SHOWCASE ========== -->
+<section class="showcase fade-in">
+  <div class="container">
+    <div class="showcase__content">
+      <div class="section__label">The Big Picture</div>
+      <h2 class="section__heading">See where your business can go.</h2>
+      <p class="section__subheading" style="margin-inline:auto;">A great website isn't just a page — it's your gateway to new customers, new markets, and new opportunities. We build the platform that gets you there.</p>
+    </div>
+    <div class="showcase__image">
+      <img src="./assets/showcase.png" alt="Website analytics dashboard showing global traffic and performance metrics on a premium workspace" width="1200" height="675" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ========== PROCESS ========== -->
+<section class="section section--centered" id="process">
+  <div class="container">
+    <div class="section__label">How It Works</div>
+    <h2 class="section__heading">From idea to launch in four steps.</h2>
+    <p class="section__subheading">A straightforward process designed to get your site live quickly — without compromising on quality.</p>
+
+    <div class="process__steps">
+      <div class="process-step fade-in">
+        <div class="process-step__number">1</div>
+        <h3 class="process-step__title">Discovery</h3>
+        <p class="process-step__desc">We learn your business, goals, and the audience you want to reach.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-step__number">2</div>
+        <h3 class="process-step__title">Design</h3>
+        <p class="process-step__desc">A custom design built from scratch — your brand, your vision, your site.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-step__number">3</div>
+        <h3 class="process-step__title">Review</h3>
+        <p class="process-step__desc">You review every detail. We refine until it's exactly right.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-step__number">4</div>
+        <h3 class="process-step__title">Launch</h3>
+        <p class="process-step__desc">Your site goes live — fast, optimized, and ready to grow your business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PRICING ========== -->
+<section class="section section--centered" id="pricing">
+  <div class="container">
+    <div class="section__label">Pricing</div>
+    <h2 class="section__heading">Pick the plan that fits your goals.</h2>
+    <p class="section__subheading">Whether you're just getting started or scaling up, we have the right package for where you're heading.</p>
+
+    <div class="pricing__grid">
+      <!-- Scout -->
+      <div class="pricing-card fade-in">
+        <div class="pricing-card__name">Scout</div>
+        <div class="pricing-card__desc">A simple online presence for your business.</div>
+        <div class="pricing-card__price">$500 <span>setup</span></div>
+        <div class="pricing-card__recurring">+ $75/mo</div>
+        <ul class="pricing-card__features" role="list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            1 page website
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Basic contact info (phone & email)
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Domain connection
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Hosting setup
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            SSL security
+          </li>
+        </ul>
+        <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-2W469693UY945633NNG2ZZSI" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Choose Scout</a>
+      </div>
+
+      <!-- Voyager (Popular) -->
+      <div class="pricing-card pricing-card--popular fade-in">
+        <div class="pricing-card__badge">Most Popular</div>
+        <div class="pricing-card__name">Voyager</div>
+        <div class="pricing-card__desc">A functional website customers can interact with.</div>
+        <div class="pricing-card__price">$1,000 <span>setup</span></div>
+        <div class="pricing-card__recurring">+ $50/wk</div>
+        <ul class="pricing-card__features" role="list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            3 to 5 pages
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Contact form
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Google Maps & social links
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Booking system
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Basic SEO & image optimization
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Domain, hosting & SSL
+          </li>
+        </ul>
+        <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-52V58524AA295960WNG2Z6WQ" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Choose Voyager</a>
+      </div>
+
+      <!-- Explorer -->
+      <div class="pricing-card fade-in">
+        <div class="pricing-card__name">Explorer</div>
+        <div class="pricing-card__desc">Built to generate leads and support marketing.</div>
+        <div class="pricing-card__price">$4,000 <span>setup</span></div>
+        <div class="pricing-card__recurring">+ $100/wk</div>
+        <ul class="pricing-card__features" role="list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            6 to 10 pages
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Conversion-focused design
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Full SEO & blog setup
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Lead capture forms
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Google Analytics & Business Profile
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            Speed optimization & monthly support
+          </li>
+        </ul>
+        <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-31B54837F9956881ENG22AJY" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">Choose Explorer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta__box">
+      <h2 class="cta__heading">Ready to reach new audiences?</h2>
+      <p class="cta__desc">Your next customers are out there. Let us build the website that connects you to them — wherever they are.</p>
+      <div class="cta__actions">
+        <a href="#pricing" class="btn btn--primary">
+          Choose Your Plan
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="mailto:sitepilotpro@gmail.com" class="btn btn--text">
+          Contact Us
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="#" class="nav__logo" aria-label="SitePilotPro home">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 3L18 11H14L16 3Z" fill="currentColor" opacity="0.15"/>
+            <path d="M16 3L18 11H14L16 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <line x1="16" y1="10" x2="16" y2="26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M16 14L5 20L16 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 14L27 20L16 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 24L11 27L16 26" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 24L21 27L16 26" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          SitePilotPro
+        </a>
+        <p class="footer__brand-desc">Premium web design for businesses ready to grow. We build websites that take you further.</p>
+      </div>
+      <div>
+        <div class="footer__heading">Services</div>
+        <ul class="footer__links" role="list">
+          <li><a href="#services">Custom Design</a></li>
+          <li><a href="#services">E-Commerce</a></li>
+          <li><a href="#services">Landing Pages</a></li>
+          <li><a href="#services">SEO</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Company</div>
+        <ul class="footer__links" role="list">
+          <li><a href="#">About</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="mailto:sitepilotpro@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__heading">Legal</div>
+        <ul class="footer__links" role="list">
+          <li><a href="./privacy.html">Privacy Policy</a></li>
+          <li><a href="./terms.html">Terms of Service</a></li>
+          <li><a href="./cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copyright">&copy; 2026 SitePilotPro. All rights reserved.</div>
+      <div class="footer__credit">
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile nav toggle
+(function(){
+  const toggle = document.getElementById('mobileToggle');
+  const links = document.getElementById('navLinks');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+})();
+
+// Initialize Lucide icons
+lucide.createIcons();
+</script>
+<script src="./globe.js"></script>
+
+</body>
+</html>
