@@ -18,8 +18,53 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — SitePilotPro</title>
-<meta name="description" content="Get in touch with SitePilotPro — reach us by email or phone to start your web design project.">
+<title>Contact SitePilotPro — Get a Free Web Design Consultation</title>
+<meta name="description" content="Contact SitePilotPro for professional web design services. Send us an inquiry or email sitepilotpro@gmail.com. Free consultations available.">
+<link rel="canonical" href="https://sitepilotpro.org/contact.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact SitePilotPro — Get a Free Web Design Consultation">
+<meta property="og:description" content="Reach out for professional web design services. Send an inquiry or email sitepilotpro@gmail.com.">
+<meta property="og:url" content="https://sitepilotpro.org/contact.html">
+<meta property="og:site_name" content="SitePilotPro">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Contact SitePilotPro — Get a Free Web Design Consultation">
+<meta name="twitter:description" content="Reach out for professional web design services. Free consultations available.">
+
+<!-- Structured Data: ContactPage + LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact SitePilotPro",
+  "url": "https://sitepilotpro.org/contact.html",
+  "mainEntity": {
+    "@type": "ProfessionalService",
+    "name": "SitePilotPro",
+    "url": "https://sitepilotpro.org",
+    "email": "sitepilotpro@gmail.com",
+    "description": "Premium web design and development services for businesses. Custom websites, e-commerce, SEO optimization, and ongoing support.",
+    "priceRange": "$500 - $4,000+",
+    "areaServed": "Worldwide",
+    "serviceType": ["Web Design", "Web Development", "E-Commerce", "SEO", "Landing Pages"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "sitepilotpro@gmail.com",
+      "contactType": "sales",
+      "availableLanguage": "English"
+    },
+    "creator": {
+      "@type": "SoftwareApplication",
+      "name": "Perplexity Computer",
+      "url": "https://www.perplexity.ai/computer"
+    }
+  }
+}
+</script>
+
 <link rel="stylesheet" href="./base.css">
 <link rel="stylesheet" href="./style.css">
 </head>
@@ -53,10 +98,12 @@
     </div>
 
     <div class="legal__content">
-      <section class="contact-cards">
+
+      <!-- Contact Cards -->
+      <section class="contact-cards" aria-label="Contact information">
         <a href="mailto:sitepilotpro@gmail.com" class="contact-card">
           <div class="contact-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <rect x="2" y="4" width="20" height="16" rx="2"/>
               <path d="M22 4L12 13L2 4"/>
             </svg>
@@ -65,24 +112,59 @@
           <div class="contact-card__value">sitepilotpro@gmail.com</div>
         </a>
 
-        <a href="tel:+18032367725" class="contact-card">
-          <div class="contact-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
-            </svg>
-          </div>
-          <div class="contact-card__label">Phone</div>
-          <div class="contact-card__value">(803) 236-7725</div>
-        </a>
+
       </section>
 
-      <section>
-        <h2>Ready to start your project?</h2>
-        <p>Whether you need a simple landing page or a full business website, we're here to help. Reach out via email or phone and we'll get back to you within 24 hours.</p>
-        <p style="margin-top: var(--space-6);">
-          <a href="./index.html#pricing" class="btn btn--primary" style="display: inline-flex; color: #000;">View Our Plans</a>
-        </p>
+      <!-- Inquiry Form -->
+      <section class="contact-form-section" aria-label="Send an inquiry">
+        <h2>Send Us an Inquiry</h2>
+        <p>Tell us about your project and we'll get back to you within 24 hours.</p>
+
+        <form name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form" action="/success.html">
+          <!-- Honeypot field for spam prevention (hidden from users) -->
+          <p class="visually-hidden" aria-hidden="true">
+            <label>Don't fill this out: <input name="bot-field"></label>
+          </p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="John Smith" class="form-input">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="john@example.com" class="form-input">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="plan" class="form-label">Interested Plan</label>
+            <select id="plan" name="plan" class="form-input form-select">
+              <option value="" disabled selected>Select a plan</option>
+              <option value="Scout ($500 setup)">Scout — $500 setup + $75/mo</option>
+              <option value="Voyager ($1,000 setup)">Voyager — $1,000 setup + $50/wk</option>
+              <option value="Explorer ($4,000 setup)">Explorer — $4,000 setup + $100/wk</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="website" class="form-label">Current Website (if any)</label>
+            <input type="url" id="website" name="website" autocomplete="url" placeholder="https://yoursite.com" class="form-input">
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Tell Us About Your Project <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required rows="5" placeholder="What kind of website do you need? Any specific features, timeline, or goals?" class="form-input form-textarea"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary form-submit">
+            Send Inquiry
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+        </form>
       </section>
+
     </div>
   </div>
 </main>
